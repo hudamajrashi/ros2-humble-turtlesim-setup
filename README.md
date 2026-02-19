@@ -59,7 +59,9 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 # Step 4: Test ROS2 Communication
 
 I tested ROS2 using demo nodes.
+
 ![Talker Listener](screenshots/talker_listener.png)
+
 The listener successfully received messages from the talker.
 
 ---
@@ -75,18 +77,21 @@ ros2 run turtlesim turtlesim_node
 ros2 run turtlesim turtle_teleop_key
 ```
 I used the arrow keys to move the turtle.
+
 ![Moving Turtle](screenshots/moving_turtle1.png)
 
 ---
 
 # Step 6: Spawn a Second Turtle
 I used the /spawn service to create another turtle inside the simulation.
+
 ![Spawn Turtle](screenshots/spawn_turtle2.png)
 
 ---
 
 # Step 7: Change Turtle Drawing Color
 I used the /turtle1/set_pen service to modify the drawing color.
+
 ![Red Turtle](screenshots/red_color_turtle1.png)
 
 ---
@@ -95,6 +100,7 @@ I used the /turtle1/set_pen service to modify the drawing color.
 ```To control the second turtle, I remapped the velocity topic:
 ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=/turtle2/cmd_vel
 ```
+
 ![Moving Turtle 2](screenshots/moving_turtle2.png)
 
 ---
