@@ -85,7 +85,7 @@ I used the arrow keys to move the turtle.
 # Step 6: Spawn a Second Turtle
 I used the /spawn service to create another turtle inside the simulation.
 
-![Spawn Turtle](screenshots/spawn_turtle2.png)
+![Spawn Turtle](screenshots/spwan_turtle2.png)
 
 ---
 
